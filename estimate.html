@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Estimation Tool - CoderBrothers</title>
     <link rel="stylesheet" href="estimate.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="estimate-container">
         <div class="estimate-header">
             <h1>Project Estimation Tool</h1>
             <p>Get instant price estimates for your digital projects</p>
         </div>
-        
+
         <div class="estimate-content">
             <div class="estimate-form">
                 <form id="estimateForm">
@@ -44,11 +47,11 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Project Details -->
                     <div class="form-section" id="projectDetails" style="display: none;">
                         <h3>Project Details</h3>
-                        
+
                         <!-- Website Options -->
                         <div class="detail-options" id="websiteOptions" style="display: none;">
                             <div class="option-group">
@@ -61,7 +64,7 @@
                                     <option value="blog">Blog/Content Website</option>
                                 </select>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>Number of Pages</label>
                                 <div class="range-slider">
@@ -69,7 +72,7 @@
                                     <span class="range-value">5 pages</span>
                                 </div>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>Additional Features</label>
                                 <div class="checkbox-group">
@@ -82,7 +85,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Mobile App Options -->
                         <div class="detail-options" id="mobileAppOptions" style="display: none;">
                             <div class="option-group">
@@ -93,7 +96,7 @@
                                     <option value="cross-platform">Cross-platform (React Native/Flutter)</option>
                                 </select>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>App Type</label>
                                 <select id="appType">
@@ -104,7 +107,7 @@
                                     <option value="entertainment">Entertainment App</option>
                                 </select>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>Number of Screens</label>
                                 <div class="range-slider">
@@ -112,7 +115,7 @@
                                     <span class="range-value">10 screens</span>
                                 </div>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>Additional Features</label>
                                 <div class="checkbox-group">
@@ -125,7 +128,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Web App Options -->
                         <div class="detail-options" id="webAppOptions" style="display: none;">
                             <div class="option-group">
@@ -138,7 +141,7 @@
                                     <option value="custom">Custom Web App</option>
                                 </select>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>Complexity Level</label>
                                 <select id="webAppComplexity">
@@ -147,7 +150,7 @@
                                     <option value="complex">Complex (Enterprise Level)</option>
                                 </select>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>User Management</label>
                                 <div class="checkbox-group">
@@ -156,7 +159,7 @@
                                     <label><input type="checkbox" value="multi-tenant"> Multi-tenant</label>
                                 </div>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>Additional Features</label>
                                 <div class="checkbox-group">
@@ -167,7 +170,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- UI/UX Options -->
                         <div class="detail-options" id="uiUxOptions" style="display: none;">
                             <div class="option-group">
@@ -179,7 +182,7 @@
                                     <option value="full-design">Full UI/UX Design</option>
                                 </select>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>Number of Screens/Pages</label>
                                 <div class="range-slider">
@@ -187,7 +190,7 @@
                                     <span class="range-value">5 screens</span>
                                 </div>
                             </div>
-                            
+
                             <div class="option-group">
                                 <label>Additional Services</label>
                                 <div class="checkbox-group">
@@ -199,7 +202,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Timeline -->
                     <div class="form-section">
                         <h3>Timeline</h3>
@@ -221,8 +224,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Contact Information -->
+
+                    <!-- Contact Section -->
                     <div class="form-section">
                         <h3>Contact Information</h3>
                         <div class="contact-fields">
@@ -236,26 +239,27 @@
                                 <input type="tel" id="clientPhone" placeholder="Phone Number">
                             </div>
                             <div class="form-group">
-                                <textarea id="projectDescription" placeholder="Brief project description (optional)" rows="3"></textarea>
+                                <textarea id="projectDescription" placeholder="Brief project description (optional)"
+                                    rows="3"></textarea>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
-            
+
             <div class="estimate-summary">
                 <div class="summary-card">
                     <h3>Project Summary</h3>
                     <div class="summary-details" id="summaryDetails">
                         <p>Select project type to see estimate</p>
                     </div>
-                    
+
                     <div class="price-breakdown" id="priceBreakdown" style="display: none;">
                         <h4>Price Breakdown</h4>
                         <div class="breakdown-items" id="breakdownItems">
                         </div>
                     </div>
-                    
+
                     <div class="total-price" id="totalPrice" style="display: none;">
                         <div class="price-display">
                             <span class="currency">₹</span>
@@ -263,7 +267,7 @@
                         </div>
                         <p class="price-note">* Final price may vary based on specific requirements</p>
                     </div>
-                    
+
                     <div class="action-buttons">
                         <button class="btn btn-primary" id="getQuoteBtn" disabled>
                             <i class="fas fa-file-invoice"></i>
@@ -278,7 +282,50 @@
             </div>
         </div>
     </div>
-    
+
+    <!-- Timeline Section -->
+    <!-- <section class="timeline">
+        <h2 class="section-title">Project Timeline</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-date">Week 1</div>
+                <div class="timeline-content">
+                    <h3>Planning & Research</h3>
+                    <p>Understanding project requirements, conducting research, and creating a roadmap.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Week 2-3</div>
+                <div class="timeline-content">
+                    <h3>Design</h3>
+                    <p>Creating wireframes, mockups, and finalizing the design for the project.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Week 4-6</div>
+                <div class="timeline-content">
+                    <h3>Development</h3>
+                    <p>Building the project, integrating features, and ensuring functionality.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Week 7</div>
+                <div class="timeline-content">
+                    <h3>Testing</h3>
+                    <p>Performing rigorous testing to ensure quality and fixing any issues.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Week 8</div>
+                <div class="timeline-content">
+                    <h3>Launch</h3>
+                    <p>Deploying the project and making it live for users.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <script src="estimate.js"></script>
 </body>
-</html> 
+
+</html>
