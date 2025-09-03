@@ -1,0 +1,10 @@
+---push command---
+git status
+git add .
+git commit -m "message"
+git push
+
+
+--pull command---
+
+git pull
