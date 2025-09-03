@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant - CoderBrothers</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chatbot-info">
+                <h3>AI Assistant</h3>
+                <p>Online • Ready to help</p>
+            </div>
+            <div class="chatbot-controls">
+                <button class="minimize-btn" id="minimizeBtn">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button class="close-btn" id="closeBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm your AI assistant from CoderBrothers. How can I help you today? I can assist with:</p>
+                    <ul>
+                        <li>Project inquiries and quotes</li>
+                        <li>Technology recommendations</li>
+                        <li>Service information</li>
+                        <li>Booking consultations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chatbot-input">
+            <div class="input-container">
+                <input type="text" id="messageInput" placeholder="Type your message..." autocomplete="off">
+                <button class="send-btn" id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="quick-replies" id="quickReplies">
+                <button class="quick-reply" data-message="I need a website">Website Development</button>
+                <button class="quick-reply" data-message="Mobile app quote">Mobile App</button>
+                <button class="quick-reply" data-message="Consultation booking">Book Consultation</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="chatbot-toggle" id="chatbotToggle">
+        <i class="fas fa-comments"></i>
+        <span class="notification-dot"></span>
+    </div>
+    
+    <script src="chatbot.js"></script>
+</body>
+</html> 

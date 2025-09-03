@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Estimation Tool - CoderBrothers</title>
+    <link rel="stylesheet" href="estimate.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="estimate-container">
+        <div class="estimate-header">
+            <h1>Project Estimation Tool</h1>
+            <p>Get instant price estimates for your digital projects</p>
+        </div>
+        
+        <div class="estimate-content">
+            <div class="estimate-form">
+                <form id="estimateForm">
+                    <!-- Project Type -->
+                    <div class="form-section">
+                        <h3>Project Type</h3>
+                        <div class="project-types">
+                            <div class="project-type" data-type="website">
+                                <i class="fas fa-globe"></i>
+                                <h4>Website</h4>
+                                <p>Business, E-commerce, Portfolio</p>
+                            </div>
+                            <div class="project-type" data-type="mobile-app">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Mobile App</h4>
+                                <p>iOS, Android, Cross-platform</p>
+                            </div>
+                            <div class="project-type" data-type="web-app">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>Web Application</h4>
+                                <p>Custom SaaS, Dashboard, CRM</p>
+                            </div>
+                            <div class="project-type" data-type="ui-ux">
+                                <i class="fas fa-palette"></i>
+                                <h4>UI/UX Design</h4>
+                                <p>Wireframes, Prototypes, Design System</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <div class="form-section" id="projectDetails" style="display: none;">
+                        <h3>Project Details</h3>
+                        
+                        <!-- Website Options -->
+                        <div class="detail-options" id="websiteOptions" style="display: none;">
+                            <div class="option-group">
+                                <label>Website Type</label>
+                                <select id="websiteType">
+                                    <option value="basic">Basic Business Website</option>
+                                    <option value="corporate">Corporate Website</option>
+                                    <option value="ecommerce">E-commerce Store</option>
+                                    <option value="portfolio">Portfolio/Personal</option>
+                                    <option value="blog">Blog/Content Website</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Number of Pages</label>
+                                <div class="range-slider">
+                                    <input type="range" id="websitePages" min="1" max="50" value="5">
+                                    <span class="range-value">5 pages</span>
+                                </div>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Additional Features</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" value="responsive"> Responsive Design</label>
+                                    <label><input type="checkbox" value="seo"> SEO Optimization</label>
+                                    <label><input type="checkbox" value="cms"> CMS Integration</label>
+                                    <label><input type="checkbox" value="analytics"> Analytics Setup</label>
+                                    <label><input type="checkbox" value="ssl"> SSL Certificate</label>
+                                    <label><input type="checkbox" value="hosting"> Hosting Setup</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile App Options -->
+                        <div class="detail-options" id="mobileAppOptions" style="display: none;">
+                            <div class="option-group">
+                                <label>Platform</label>
+                                <select id="mobilePlatform">
+                                    <option value="ios">iOS Only</option>
+                                    <option value="android">Android Only</option>
+                                    <option value="cross-platform">Cross-platform (React Native/Flutter)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>App Type</label>
+                                <select id="appType">
+                                    <option value="business">Business App</option>
+                                    <option value="ecommerce">E-commerce App</option>
+                                    <option value="social">Social/Community App</option>
+                                    <option value="utility">Utility/Tool App</option>
+                                    <option value="entertainment">Entertainment App</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Number of Screens</label>
+                                <div class="range-slider">
+                                    <input type="range" id="appScreens" min="5" max="50" value="10">
+                                    <span class="range-value">10 screens</span>
+                                </div>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Additional Features</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" value="push-notifications"> Push Notifications</label>
+                                    <label><input type="checkbox" value="payment-gateway"> Payment Gateway</label>
+                                    <label><input type="checkbox" value="social-login"> Social Login</label>
+                                    <label><input type="checkbox" value="offline-mode"> Offline Mode</label>
+                                    <label><input type="checkbox" value="analytics"> Analytics Integration</label>
+                                    <label><input type="checkbox" value="app-store"> App Store Submission</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Web App Options -->
+                        <div class="detail-options" id="webAppOptions" style="display: none;">
+                            <div class="option-group">
+                                <label>Application Type</label>
+                                <select id="webAppType">
+                                    <option value="saas">SaaS Application</option>
+                                    <option value="dashboard">Admin Dashboard</option>
+                                    <option value="crm">CRM System</option>
+                                    <option value="erp">ERP System</option>
+                                    <option value="custom">Custom Web App</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Complexity Level</label>
+                                <select id="webAppComplexity">
+                                    <option value="simple">Simple (Basic CRUD)</option>
+                                    <option value="medium">Medium (Advanced Features)</option>
+                                    <option value="complex">Complex (Enterprise Level)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>User Management</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" value="user-auth"> User Authentication</label>
+                                    <label><input type="checkbox" value="role-based"> Role-based Access</label>
+                                    <label><input type="checkbox" value="multi-tenant"> Multi-tenant</label>
+                                </div>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Additional Features</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" value="api"> REST API</label>
+                                    <label><input type="checkbox" value="real-time"> Real-time Updates</label>
+                                    <label><input type="checkbox" value="reporting"> Reporting System</label>
+                                    <label><input type="checkbox" value="integrations"> Third-party Integrations</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- UI/UX Options -->
+                        <div class="detail-options" id="uiUxOptions" style="display: none;">
+                            <div class="option-group">
+                                <label>Design Type</label>
+                                <select id="designType">
+                                    <option value="wireframes">Wireframes</option>
+                                    <option value="prototypes">Interactive Prototypes</option>
+                                    <option value="design-system">Design System</option>
+                                    <option value="full-design">Full UI/UX Design</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Number of Screens/Pages</label>
+                                <div class="range-slider">
+                                    <input type="range" id="designScreens" min="1" max="30" value="5">
+                                    <span class="range-value">5 screens</span>
+                                </div>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Additional Services</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" value="user-research"> User Research</label>
+                                    <label><input type="checkbox" value="usability-testing"> Usability Testing</label>
+                                    <label><input type="checkbox" value="branding"> Brand Identity</label>
+                                    <label><input type="checkbox" value="style-guide"> Style Guide</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline -->
+                    <div class="form-section">
+                        <h3>Timeline</h3>
+                        <div class="timeline-options">
+                            <div class="timeline-option" data-timeline="urgent">
+                                <i class="fas fa-rocket"></i>
+                                <h4>Urgent (1-2 weeks)</h4>
+                                <p>+50% Rush Fee</p>
+                            </div>
+                            <div class="timeline-option" data-timeline="normal">
+                                <i class="fas fa-clock"></i>
+                                <h4>Normal (2-8 weeks)</h4>
+                                <p>Standard Timeline</p>
+                            </div>
+                            <div class="timeline-option" data-timeline="flexible">
+                                <i class="fas fa-calendar"></i>
+                                <h4>Flexible (8+ weeks)</h4>
+                                <p>-10% Discount</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="form-section">
+                        <h3>Contact Information</h3>
+                        <div class="contact-fields">
+                            <div class="form-group">
+                                <input type="text" id="clientName" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="clientEmail" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="clientPhone" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="projectDescription" placeholder="Brief project description (optional)" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="estimate-summary">
+                <div class="summary-card">
+                    <h3>Project Summary</h3>
+                    <div class="summary-details" id="summaryDetails">
+                        <p>Select project type to see estimate</p>
+                    </div>
+                    
+                    <div class="price-breakdown" id="priceBreakdown" style="display: none;">
+                        <h4>Price Breakdown</h4>
+                        <div class="breakdown-items" id="breakdownItems">
+                        </div>
+                    </div>
+                    
+                    <div class="total-price" id="totalPrice" style="display: none;">
+                        <div class="price-display">
+                            <span class="currency">₹</span>
+                            <span class="amount" id="totalAmount">0</span>
+                        </div>
+                        <p class="price-note">* Final price may vary based on specific requirements</p>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="getQuoteBtn" disabled>
+                            <i class="fas fa-file-invoice"></i>
+                            Get Detailed Quote
+                        </button>
+                        <button class="btn btn-secondary" id="scheduleCallBtn">
+                            <i class="fas fa-phone"></i>
+                            Schedule Free Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="estimate.js"></script>
+</body>
+</html> 
