@@ -3415,6 +3415,7 @@ html {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    margin-top: 15px;
 }
 
 .summary-card {
