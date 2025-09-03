@@ -1082,6 +1082,31 @@ body.light-theme .language-option:hover {
 }
 
 /* About Section */
+/* New About Row Layout */
+.about-row {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.about-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: auto;
+}
+
+.about-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 180px;
+    align-items: flex-start;
+}
+
 .about {
     padding: 5rem 0;
     background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(42, 42, 63, 0.8) 100%);
@@ -1102,10 +1127,7 @@ body.light-theme .language-option:hover {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: start;
+    /* Removed grid layout, now handled by .about-row */
     position: relative;
     z-index: 2;
 }
@@ -1160,9 +1182,7 @@ body.light-theme .language-option:hover {
 }
 
 .about-visual {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: none;
 }
 
 .developers-illustration {
