@@ -41,6 +41,7 @@ body {
     transition: var(--transition);
 }
 
+
 .chatbot-container.active {
     transform: translateY(0);
     opacity: 1;
@@ -292,27 +293,33 @@ body {
     right: 20px;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: var(--glass-shadow);
     cursor: pointer;
-    box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
+    z-index: 10001;
     transition: var(--transition);
-    z-index: 9999;
 }
 
 .chatbot-toggle:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
 }
 
-.chatbot-toggle i {
-    font-size: 1.5rem;
-    color: white;
+.chatbot-toggle .notification-dot {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent);
 }
 
+/* Notification Dot */
 .notification-dot {
     position: absolute;
     top: 5px;
@@ -400,4 +407,4 @@ body {
 
 .chatbot-messages::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 212, 255, 0.5);
-} 
+}
