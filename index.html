@@ -1,879 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoderBrothers - We Code Your Future 🚀</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="chatbot.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <h2>CoderBrothers</h2>
-        </div>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#services" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="estimate.html" class="nav-link">Get Estimate</a>
-          </li>
-          <li class="nav-item">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#tech-stack" class="nav-link">Tech Stack</a>
-          </li>
-          <li class="nav-item">
-            <a href="#careers" class="nav-link">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a href="#blog" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <div class="theme-toggle" id="themeToggle">
-          <i class="fas fa-moon"></i>
-        </div>
-        <div class="language-selector" id="languageSelector">
-          <button class="language-btn" data-lang="en">
-            <span>🇺🇸</span>
-            EN
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoderBrothers - We Code Your Future 🚀</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="chatbot.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>CoderBrothers</h2>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="estimate.html" class="nav-link">Get Estimate</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#tech-stack" class="nav-link">Tech Stack</a>
+        </li>
+        <li class="nav-item">
+          <a href="#careers" class="nav-link">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+      </div>
+      <div class="language-selector" id="languageSelector">
+        <button class="language-btn" data-lang="en">
+          <span>🇺🇸</span>
+          EN
+        </button>
+        <div class="language-dropdown">
+          <button class="language-option" data-lang="hi">
+            <span>🇮🇳</span>
+            हिंदी
           </button>
-          <div class="language-dropdown">
-            <button class="language-option" data-lang="hi">
-              <span>🇮🇳</span>
-              हिंदी
-            </button>
-            <button class="language-option" data-lang="gu">
-              <span>🇮🇳</span>
-              ગુજરાતી
-            </button>
+          <button class="language-option" data-lang="gu">
+            <span>🇮🇳</span>
+            ગુજરાતી
+          </button>
+        </div>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <!-- Animated Background Particles -->
+    <div class="hero-particles">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+      <div class="particle particle-5"></div>
+      <div class="particle particle-6"></div>
+      <div class="particle particle-7"></div>
+      <div class="particle particle-8"></div>
+    </div>
+
+    <!-- Animated Coding Lines -->
+    <div class="coding-lines">
+      <div class="code-line line-1">
+        <span class="code-keyword">const</span>
+        <span class="code-variable">future</span> =
+        <span class="code-string">'We Code Your Future'</span>;
+      </div>
+      <div class="code-line line-2">
+        <span class="code-keyword">function</span>
+        <span class="code-function">buildDreams</span>() {
+      </div>
+      <div class="code-line line-3">
+        &nbsp;&nbsp;<span class="code-keyword">return</span>
+        <span class="code-string">'Next-Gen Solutions'</span>;
+      </div>
+      <div class="code-line line-4">}</div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          We Code Your Future
+          <span class="rocket">🚀</span>
+        </h1>
+        <p class="hero-subtitle">
+          Building mobile apps, websites & AI solutions for next-gen
+          businesses.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-rocket"></i>
+            Get Started
+          </a>
+          <a href="#portfolio" class="btn btn-secondary">
+            <i class="fas fa-eye"></i>
+            See Portfolio
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="tech-icons">
+          <div class="tech-icon" data-tech="react">
+            <i class="fab fa-react"></i>
           </div>
-        </div>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home" class="hero">
-      <!-- Animated Background Particles -->
-      <div class="hero-particles">
-        <div class="particle particle-1"></div>
-        <div class="particle particle-2"></div>
-        <div class="particle particle-3"></div>
-        <div class="particle particle-4"></div>
-        <div class="particle particle-5"></div>
-        <div class="particle particle-6"></div>
-        <div class="particle particle-7"></div>
-        <div class="particle particle-8"></div>
-      </div>
-
-      <!-- Animated Coding Lines -->
-      <div class="coding-lines">
-        <div class="code-line line-1">
-          <span class="code-keyword">const</span>
-          <span class="code-variable">future</span> =
-          <span class="code-string">'We Code Your Future'</span>;
-        </div>
-        <div class="code-line line-2">
-          <span class="code-keyword">function</span>
-          <span class="code-function">buildDreams</span>() {
-        </div>
-        <div class="code-line line-3">
-          &nbsp;&nbsp;<span class="code-keyword">return</span>
-          <span class="code-string">'Next-Gen Solutions'</span>;
-        </div>
-        <div class="code-line line-4">}</div>
-      </div>
-
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            We Code Your Future
-            <span class="rocket">🚀</span>
-          </h1>
-          <p class="hero-subtitle">
-            Building mobile apps, websites & AI solutions for next-gen
-            businesses.
-          </p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">
-              <i class="fas fa-rocket"></i>
-              Get Started
-            </a>
-            <a href="#portfolio" class="btn btn-secondary">
-              <i class="fas fa-eye"></i>
-              See Portfolio
-            </a>
+          <div class="tech-icon" data-tech="flutter">
+            <i class="fas fa-mobile-alt"></i>
           </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-glow"></div>
-          <div class="tech-icons">
-            <div class="tech-icon" data-tech="react">
-              <i class="fab fa-react"></i>
-            </div>
-            <div class="tech-icon" data-tech="flutter">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <div class="tech-icon" data-tech="ai">
-              <i class="fas fa-brain"></i>
-            </div>
-            <div class="tech-icon" data-tech="node">
-              <i class="fab fa-node-js"></i>
-            </div>
-            <div class="tech-icon" data-tech="python">
-              <i class="fab fa-python"></i>
-            </div>
-            <div class="tech-icon" data-tech="aws">
-              <i class="fab fa-aws"></i>
-            </div>
+          <div class="tech-icon" data-tech="ai">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="tech-icon" data-tech="node">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div class="tech-icon" data-tech="python">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="tech-icon" data-tech="aws">
+            <i class="fab fa-aws"></i>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Chatbot Container -->
-      <div class="chatbot-container" id="chatbotContainer">
-        <div class="chatbot-header">
-          <div class="chatbot-avatar">
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbotContainer">
+      <div class="chatbot-header">
+        <div class="chatbot-avatar">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-info">
+          <h3>AI Assistant</h3>
+          <p>Online • Ready to help</p>
+        </div>
+        <div class="chatbot-controls">
+          <button class="minimize-btn" id="minimizeBtn">
+            <i class="fas fa-minus"></i>
+          </button>
+          <button class="close-btn" id="closeBtn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="chatbot-messages" id="chatMessages">
+        <div class="message bot-message">
+          <div class="message-avatar">
             <i class="fas fa-robot"></i>
           </div>
-          <div class="chatbot-info">
-            <h3>AI Assistant</h3>
-            <p>Online • Ready to help</p>
+          <div class="message-content">
+            <p>Hello! I'm your AI assistant. How can I help you today?</p>
           </div>
-          <div class="chatbot-controls">
-            <button class="minimize-btn" id="minimizeBtn">
-              <i class="fas fa-minus"></i>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <div class="input-container">
+          <input type="text" id="messageInput" placeholder="Type your message..." autocomplete="off" />
+          <button class="send-btn" id="sendBtn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="chatbot-toggle" id="chatbotToggle">
+      <i class="fas fa-comments"></i>
+      <span class="notification-dot"></span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About CoderBrothers</h2>
+      <div class="about-row">
+        <div class="about-cards">
+          <div class="about-card">
+            <h3>Our Story</h3>
+            <p>
+              Founded with a passion for innovation, CoderBrothers emerged
+              from the vision of creating exceptional digital experiences. We
+              believe in the power of technology to transform businesses and
+              enhance human lives.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Our Mission</h3>
+            <p>
+              To deliver cutting-edge technology solutions that empower
+              businesses to thrive in the digital age, while maintaining the
+              highest standards of quality and innovation.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Our Vision</h3>
+            <p>
+              To be the leading technology partner for businesses worldwide,
+              known for our innovative solutions, exceptional service, and
+              commitment to client success.
+            </p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <h3>25+</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-item">
+            <h3>3+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Support</p>
+          </div>
+        </div>
+      </div>
+      <!-- Timeline remains below the row -->
+      <div class="about-timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Founded in 2025</h4>
+            <p>Started with a vision to revolutionize digital solutions</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>First 10 Projects</h4>
+            <p>Delivered successful mobile apps and websites</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Scaling Up</h4>
+            <p>Expanding team and services globally</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card" data-service="mobile">
+          <div class="service-icon">
+            <span class="service-emoji">📱</span>
+          </div>
+          <h3>Mobile App Development</h3>
+          <p>
+            Native and cross-platform mobile applications for iOS and Android
+            using React Native, Flutter, and native technologies.
+          </p>
+          <ul>
+            <li>iOS & Android Development</li>
+            <li>Cross-platform Solutions</li>
+            <li>App Store Optimization</li>
+            <li>Maintenance & Updates</li>
+          </ul>
+          <div class="service-glow"></div>
+        </div>
+        <div class="service-card" data-service="web">
+          <div class="service-icon">
+            <span class="service-emoji">💻</span>
+          </div>
+          <h3>Web Development</h3>
+          <p>
+            Responsive, modern websites and web applications built with the
+            latest technologies and best practices.
+          </p>
+          <ul>
+            <li>Frontend Development</li>
+            <li>Backend Development</li>
+            <li>E-commerce Solutions</li>
+            <li>CMS Integration</li>
+          </ul>
+          <div class="service-glow"></div>
+        </div>
+        <div class="service-card" data-service="design">
+          <div class="service-icon">
+            <span class="service-emoji">🎨</span>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>
+            User-centered design solutions that create engaging and intuitive
+            user experiences across all platforms.
+          </p>
+          <ul>
+            <li>User Interface Design</li>
+            <li>User Experience Design</li>
+            <li>Prototyping & Wireframing</li>
+            <li>Design Systems</li>
+          </ul>
+          <div class="service-glow"></div>
+        </div>
+        <div class="service-card" data-service="erp">
+          <div class="service-icon">
+            <span class="service-emoji">🏢</span>
+          </div>
+          <h3>ERP & SaaS Solutions</h3>
+          <p>
+            Custom enterprise resource planning and software-as-a-service
+            solutions to streamline business operations.
+          </p>
+          <ul>
+            <li>Custom ERP Development</li>
+            <li>SaaS Platform Development</li>
+            <li>Business Process Automation</li>
+            <li>Integration Services</li>
+          </ul>
+          <div class="service-glow"></div>
+        </div>
+        <div class="service-card" data-service="ai">
+          <div class="service-icon">
+            <span class="service-emoji">🤖</span>
+          </div>
+          <h3>AI/ML Integrations</h3>
+          <p>
+            Intelligent solutions powered by artificial intelligence and
+            machine learning to enhance business capabilities.
+          </p>
+          <ul>
+            <li>Machine Learning Models</li>
+            <li>AI Chatbots</li>
+            <li>Data Analytics</li>
+            <li>Predictive Analytics</li>
+          </ul>
+          <div class="service-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">Our Portfolio</h2>
+
+      <!-- Portfolio Filters -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-th"></i>
+          All Projects
+        </button>
+        <button class="filter-btn" data-filter="website">
+          <i class="fas fa-globe"></i>
+          Websites
+        </button>
+        <button class="filter-btn" data-filter="mobile">
+          <i class="fas fa-mobile-alt"></i>
+          Mobile Apps
+        </button>
+        <button class="filter-btn" data-filter="webapp">
+          <i class="fas fa-laptop-code"></i>
+          Web Apps
+        </button>
+        <button class="filter-btn" data-filter="ecommerce">
+          <i class="fas fa-shopping-cart"></i>
+          E-commerce
+        </button>
+        <button class="filter-btn" data-filter="ui-ux">
+          <i class="fas fa-palette"></i>
+          UI/UX Design
+        </button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="mobile ecommerce">
+          <div class="portfolio-image">
+            <img src="https://dummyimage.com/400x300/2563eb/ffffff&text=E-Commerce+App" alt="E-Commerce App" />
+          </div>
+          <div class="portfolio-content">
+            <h3>E-Commerce Mobile App</h3>
+            <p>
+              A full-featured e-commerce application with payment integration,
+              inventory management, and analytics dashboard.
+            </p>
+            <div class="portfolio-tech">
+              <span>React Native</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="webapp">
+          <div class="portfolio-image">
+            <img src="https://dummyimage.com/400x300/7c3aed/ffffff&text=Healthcare+Platform"
+              alt="Healthcare Platform" />
+          </div>
+          <div class="portfolio-content">
+            <h3>Healthcare Management System</h3>
+            <p>
+              Comprehensive healthcare platform for patient management,
+              appointment scheduling, and medical records.
+            </p>
+            <div class="portfolio-tech">
+              <span>Flutter</span>
+              <span>Python</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="webapp">
+          <div class="portfolio-image">
+            <img src="https://dummyimage.com/400x300/dc2626/ffffff&text=Fintech+Dashboard" alt="Fintech Dashboard" />
+          </div>
+          <div class="portfolio-content">
+            <h3>Fintech Analytics Dashboard</h3>
+            <p>
+              Real-time financial analytics dashboard with AI-powered insights
+              and predictive modeling.
+            </p>
+            <div class="portfolio-tech">
+              <span>React</span>
+              <span>Python</span>
+              <span>TensorFlow</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="website">
+          <div class="portfolio-image">
+            <img src="https://dummyimage.com/400x300/059669/ffffff&text=Corporate+Website" alt="Corporate Website" />
+          </div>
+          <div class="portfolio-content">
+            <h3>Corporate Website Redesign</h3>
+            <p>
+              Modern corporate website with advanced animations, SEO
+              optimization, and lead generation features.
+            </p>
+            <div class="portfolio-tech">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="ecommerce">
+          <div class="portfolio-image">
+            <img src="https://dummyimage.com/400x300/f59e0b/ffffff&text=E-Commerce+Store" alt="E-Commerce Store" />
+          </div>
+          <div class="portfolio-content">
+            <h3>E-Commerce Website</h3>
+            <p>
+              Complete e-commerce solution with payment gateway, inventory
+              management, and admin dashboard.
+            </p>
+            <div class="portfolio-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Stripe</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="ui-ux">
+          <div class="portfolio-image">
+            <img src="https://dummyimage.com/400x300/8b5cf6/ffffff&text=UI+Design" alt="UI Design" />
+          </div>
+          <div class="portfolio-content">
+            <h3>Mobile App UI/UX Design</h3>
+            <p>
+              Complete UI/UX design system for a fintech mobile application
+              with user research and prototyping.
+            </p>
+            <div class="portfolio-tech">
+              <span>Figma</span>
+              <span>Adobe XD</span>
+              <span>Prototyping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="tech-stack" class="tech-stack">
+    <div class="container">
+      <h2 class="section-title">Our Tech Stack</h2>
+      <div class="tech-logos">
+        <div class="tech-logo" data-tech="react">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+        </div>
+        <div class="tech-logo" data-tech="nodejs">
+          <i class="fab fa-node-js"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="tech-logo" data-tech="react-native">
+          <i class="fab fa-react"></i>
+          <span>React Native</span>
+        </div>
+        <div class="tech-logo" data-tech="php">
+          <i class="fab fa-php"></i>
+          <span>PHP</span>
+        </div>
+        <div class="tech-logo" data-tech="javascript">
+          <i class="fab fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-logo" data-tech="typescript">
+          <i class="fab fa-js"></i>
+          <span>TypeScript</span>
+        </div>
+        <div class="tech-logo" data-tech="mongodb">
+          <i class="fas fa-database"></i>
+          <span>MongoDB</span>
+        </div>
+        <div class="tech-logo" data-tech="aws">
+          <i class="fab fa-aws"></i>
+          <span>AWS</span>
+        </div>
+        <div class="tech-logo" data-tech="networking">
+          <i class="fas fa-network-wired"></i>
+          <span>Networking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers Section -->
+  <section id="careers" class="careers">
+    <div class="container">
+      <h2 class="section-title">Join Our Team</h2>
+      <div class="careers-content">
+        <div class="careers-text">
+          <h3>Join the Brothers who Code 🚀</h3>
+          <p>
+            We're always looking for talented developers, designers, and tech
+            enthusiasts to join our growing team. If you're passionate about
+            technology and innovation, we'd love to hear from you!
+          </p>
+        </div>
+        <div class="job-openings">
+          <div class="job-card">
+            <h4>Senior React Native Developer</h4>
+            <p>Experience: 3+ years</p>
+            <p>Location: Remote/Hybrid</p>
+            <a href="#contact" class="btn btn-primary">Apply Now</a>
+          </div>
+          <div class="job-card">
+            <h4>Full Stack Developer</h4>
+            <p>Experience: 2+ years</p>
+            <p>Location: Remote/Hybrid</p>
+            <a href="#contact" class="btn btn-primary">Apply Now</a>
+          </div>
+          <div class="job-card">
+            <h4>UI/UX Designer</h4>
+            <p>Experience: 2+ years</p>
+            <p>Location: Remote/Hybrid</p>
+            <a href="#contact" class="btn btn-primary">Apply Now</a>
+          </div>
+          <div class="job-card">
+            <h4>Internship Program</h4>
+            <p>Duration: 3-6 months</p>
+            <p>Location: Remote</p>
+            <a href="#contact" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Build Something Amazing Together</h3>
+          <p>
+            Ready to transform your ideas into reality? We'd love to hear
+            about your project and discuss how we can help bring your vision
+            to life.
+          </p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>hello@coderbrothers.com</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fab fa-telegram"></i>
+              <div>
+                <h4>Telegram</h4>
+                <p>@coderbrothers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone" />
+            </div>
+            <div class="form-group">
+              <select id="service" name="service" required>
+                <option value="">Select Service</option>
+                <option value="mobile-app">Mobile App Development</option>
+                <option value="website">Website Development</option>
+                <option value="ui-ux">UI/UX Design</option>
+                <option value="erp-saas">ERP & SaaS Solutions</option>
+                <option value="ai-ml">AI/ML Integrations</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Tell us about your project" rows="5"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Send Message
             </button>
-            <button class="close-btn" id="closeBtn">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-        <div class="chatbot-messages" id="chatMessages">
-          <div class="message bot-message">
-            <div class="message-avatar">
-              <i class="fas fa-robot"></i>
-            </div>
-            <div class="message-content">
-              <p>Hello! I'm your AI assistant. How can I help you today?</p>
-            </div>
-          </div>
-        </div>
-        <div class="chatbot-input">
-          <div class="input-container">
-            <input
-              type="text"
-              id="messageInput"
-              placeholder="Type your message..."
-              autocomplete="off"
-            />
-            <button class="send-btn" id="sendBtn">
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="chatbot-toggle" id="chatbotToggle">
-        <i class="fas fa-comments"></i>
-        <span class="notification-dot"></span>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <h2 class="section-title">About CoderBrothers</h2>
-        <div class="about-row">
-          <div class="about-cards">
-            <div class="about-card">
-              <h3>Our Story</h3>
-              <p>
-                Founded with a passion for innovation, CoderBrothers emerged
-                from the vision of creating exceptional digital experiences. We
-                believe in the power of technology to transform businesses and
-                enhance human lives.
-              </p>
-            </div>
-            <div class="about-card">
-              <h3>Our Mission</h3>
-              <p>
-                To deliver cutting-edge technology solutions that empower
-                businesses to thrive in the digital age, while maintaining the
-                highest standards of quality and innovation.
-              </p>
-            </div>
-            <div class="about-card">
-              <h3>Our Vision</h3>
-              <p>
-                To be the leading technology partner for businesses worldwide,
-                known for our innovative solutions, exceptional service, and
-                commitment to client success.
-              </p>
-            </div>
-          </div>
-          <div class="about-stats">
-            <div class="stat-item">
-              <h3>50+</h3>
-              <p>Projects Completed</p>
-            </div>
-            <div class="stat-item">
-              <h3>25+</h3>
-              <p>Happy Clients</p>
-            </div>
-            <div class="stat-item">
-              <h3>3+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div class="stat-item">
-              <h3>24/7</h3>
-              <p>Support</p>
-            </div>
-          </div>
-        </div>
-        <!-- Timeline remains below the row -->
-        <div class="about-timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h4>Founded in 2025</h4>
-              <p>Started with a vision to revolutionize digital solutions</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h4>First 10 Projects</h4>
-              <p>Delivered successful mobile apps and websites</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h4>Scaling Up</h4>
-              <p>Expanding team and services globally</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-      <div class="container">
-        <h2 class="section-title">Our Services</h2>
-        <div class="services-grid">
-          <div class="service-card" data-service="mobile">
-            <div class="service-icon">
-              <span class="service-emoji">📱</span>
-            </div>
-            <h3>Mobile App Development</h3>
-            <p>
-              Native and cross-platform mobile applications for iOS and Android
-              using React Native, Flutter, and native technologies.
-            </p>
-            <ul>
-              <li>iOS & Android Development</li>
-              <li>Cross-platform Solutions</li>
-              <li>App Store Optimization</li>
-              <li>Maintenance & Updates</li>
-            </ul>
-            <div class="service-glow"></div>
-          </div>
-          <div class="service-card" data-service="web">
-            <div class="service-icon">
-              <span class="service-emoji">💻</span>
-            </div>
-            <h3>Web Development</h3>
-            <p>
-              Responsive, modern websites and web applications built with the
-              latest technologies and best practices.
-            </p>
-            <ul>
-              <li>Frontend Development</li>
-              <li>Backend Development</li>
-              <li>E-commerce Solutions</li>
-              <li>CMS Integration</li>
-            </ul>
-            <div class="service-glow"></div>
-          </div>
-          <div class="service-card" data-service="design">
-            <div class="service-icon">
-              <span class="service-emoji">🎨</span>
-            </div>
-            <h3>UI/UX Design</h3>
-            <p>
-              User-centered design solutions that create engaging and intuitive
-              user experiences across all platforms.
-            </p>
-            <ul>
-              <li>User Interface Design</li>
-              <li>User Experience Design</li>
-              <li>Prototyping & Wireframing</li>
-              <li>Design Systems</li>
-            </ul>
-            <div class="service-glow"></div>
-          </div>
-          <div class="service-card" data-service="erp">
-            <div class="service-icon">
-              <span class="service-emoji">🏢</span>
-            </div>
-            <h3>ERP & SaaS Solutions</h3>
-            <p>
-              Custom enterprise resource planning and software-as-a-service
-              solutions to streamline business operations.
-            </p>
-            <ul>
-              <li>Custom ERP Development</li>
-              <li>SaaS Platform Development</li>
-              <li>Business Process Automation</li>
-              <li>Integration Services</li>
-            </ul>
-            <div class="service-glow"></div>
-          </div>
-          <div class="service-card" data-service="ai">
-            <div class="service-icon">
-              <span class="service-emoji">🤖</span>
-            </div>
-            <h3>AI/ML Integrations</h3>
-            <p>
-              Intelligent solutions powered by artificial intelligence and
-              machine learning to enhance business capabilities.
-            </p>
-            <ul>
-              <li>Machine Learning Models</li>
-              <li>AI Chatbots</li>
-              <li>Data Analytics</li>
-              <li>Predictive Analytics</li>
-            </ul>
-            <div class="service-glow"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2 class="section-title">Our Portfolio</h2>
-
-        <!-- Portfolio Filters -->
-        <div class="portfolio-filters">
-          <button class="filter-btn active" data-filter="all">
-            <i class="fas fa-th"></i>
-            All Projects
-          </button>
-          <button class="filter-btn" data-filter="website">
-            <i class="fas fa-globe"></i>
-            Websites
-          </button>
-          <button class="filter-btn" data-filter="mobile">
-            <i class="fas fa-mobile-alt"></i>
-            Mobile Apps
-          </button>
-          <button class="filter-btn" data-filter="webapp">
-            <i class="fas fa-laptop-code"></i>
-            Web Apps
-          </button>
-          <button class="filter-btn" data-filter="ecommerce">
-            <i class="fas fa-shopping-cart"></i>
-            E-commerce
-          </button>
-          <button class="filter-btn" data-filter="ui-ux">
-            <i class="fas fa-palette"></i>
-            UI/UX Design
-          </button>
-        </div>
-
-        <div class="portfolio-grid">
-          <div class="portfolio-item" data-category="mobile ecommerce">
-            <div class="portfolio-image">
-              <img
-                src="https://via.placeholder.com/400x300/2563eb/ffffff?text=E-Commerce+App"
-                alt="E-Commerce App"
-              />
-            </div>
-            <div class="portfolio-content">
-              <h3>E-Commerce Mobile App</h3>
-              <p>
-                A full-featured e-commerce application with payment integration,
-                inventory management, and analytics dashboard.
-              </p>
-              <div class="portfolio-tech">
-                <span>React Native</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="webapp">
-            <div class="portfolio-image">
-              <img
-                src="https://via.placeholder.com/400x300/7c3aed/ffffff?text=Healthcare+Platform"
-                alt="Healthcare Platform"
-              />
-            </div>
-            <div class="portfolio-content">
-              <h3>Healthcare Management System</h3>
-              <p>
-                Comprehensive healthcare platform for patient management,
-                appointment scheduling, and medical records.
-              </p>
-              <div class="portfolio-tech">
-                <span>Flutter</span>
-                <span>Python</span>
-                <span>PostgreSQL</span>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="webapp">
-            <div class="portfolio-image">
-              <img
-                src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Fintech+Dashboard"
-                alt="Fintech Dashboard"
-              />
-            </div>
-            <div class="portfolio-content">
-              <h3>Fintech Analytics Dashboard</h3>
-              <p>
-                Real-time financial analytics dashboard with AI-powered insights
-                and predictive modeling.
-              </p>
-              <div class="portfolio-tech">
-                <span>React</span>
-                <span>Python</span>
-                <span>TensorFlow</span>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="website">
-            <div class="portfolio-image">
-              <img
-                src="https://via.placeholder.com/400x300/059669/ffffff?text=Corporate+Website"
-                alt="Corporate Website"
-              />
-            </div>
-            <div class="portfolio-content">
-              <h3>Corporate Website Redesign</h3>
-              <p>
-                Modern corporate website with advanced animations, SEO
-                optimization, and lead generation features.
-              </p>
-              <div class="portfolio-tech">
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>Tailwind CSS</span>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="ecommerce">
-            <div class="portfolio-image">
-              <img
-                src="https://via.placeholder.com/400x300/f59e0b/ffffff?text=E-Commerce+Store"
-                alt="E-Commerce Store"
-              />
-            </div>
-            <div class="portfolio-content">
-              <h3>E-Commerce Website</h3>
-              <p>
-                Complete e-commerce solution with payment gateway, inventory
-                management, and admin dashboard.
-              </p>
-              <div class="portfolio-tech">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Stripe</span>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="ui-ux">
-            <div class="portfolio-image">
-              <img
-                src="https://via.placeholder.com/400x300/8b5cf6/ffffff?text=UI+Design"
-                alt="UI Design"
-              />
-            </div>
-            <div class="portfolio-content">
-              <h3>Mobile App UI/UX Design</h3>
-              <p>
-                Complete UI/UX design system for a fintech mobile application
-                with user research and prototyping.
-              </p>
-              <div class="portfolio-tech">
-                <span>Figma</span>
-                <span>Adobe XD</span>
-                <span>Prototyping</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tech Stack Section -->
-    <section id="tech-stack" class="tech-stack">
-      <div class="container">
-        <h2 class="section-title">Our Tech Stack</h2>
-        <div class="tech-logos">
-          <div class="tech-logo" data-tech="react">
-            <i class="fab fa-react"></i>
-            <span>React</span>
-          </div>
-          <div class="tech-logo" data-tech="nextjs">
-            <i class="fas fa-code"></i>
-            <span>Next.js</span>
-          </div>
-          <div class="tech-logo" data-tech="nodejs">
-            <i class="fab fa-node-js"></i>
-            <span>Node.js</span>
-          </div>
-          <div class="tech-logo" data-tech="flutter">
-            <i class="fas fa-mobile-alt"></i>
-            <span>Flutter</span>
-          </div>
-          <div class="tech-logo" data-tech="mongodb">
-            <i class="fas fa-database"></i>
-            <span>MongoDB</span>
-          </div>
-          <div class="tech-logo" data-tech="aws">
-            <i class="fab fa-aws"></i>
-            <span>AWS</span>
-          </div>
-          <div class="tech-logo" data-tech="python">
-            <i class="fab fa-python"></i>
-            <span>Python</span>
-          </div>
-          <div class="tech-logo" data-tech="typescript">
-            <i class="fab fa-js"></i>
-            <span>TypeScript</span>
-          </div>
-          <div class="tech-logo" data-tech="docker">
-            <i class="fab fa-docker"></i>
-            <span>Docker</span>
-          </div>
-          <div class="tech-logo" data-tech="kubernetes">
-            <i class="fas fa-cube"></i>
-            <span>Kubernetes</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Careers Section -->
-    <section id="careers" class="careers">
-      <div class="container">
-        <h2 class="section-title">Join Our Team</h2>
-        <div class="careers-content">
-          <div class="careers-text">
-            <h3>Join the Brothers who Code 🚀</h3>
-            <p>
-              We're always looking for talented developers, designers, and tech
-              enthusiasts to join our growing team. If you're passionate about
-              technology and innovation, we'd love to hear from you!
-            </p>
-          </div>
-          <div class="job-openings">
-            <div class="job-card">
-              <h4>Senior React Native Developer</h4>
-              <p>Experience: 3+ years</p>
-              <p>Location: Remote/Hybrid</p>
-              <a href="#contact" class="btn btn-primary">Apply Now</a>
-            </div>
-            <div class="job-card">
-              <h4>Full Stack Developer</h4>
-              <p>Experience: 2+ years</p>
-              <p>Location: Remote/Hybrid</p>
-              <a href="#contact" class="btn btn-primary">Apply Now</a>
-            </div>
-            <div class="job-card">
-              <h4>UI/UX Designer</h4>
-              <p>Experience: 2+ years</p>
-              <p>Location: Remote/Hybrid</p>
-              <a href="#contact" class="btn btn-primary">Apply Now</a>
-            </div>
-            <div class="job-card">
-              <h4>Internship Program</h4>
-              <p>Duration: 3-6 months</p>
-              <p>Location: Remote</p>
-              <a href="#contact" class="btn btn-primary">Apply Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-      <div class="container">
-        <h2 class="section-title">Latest Insights</h2>
-        <div class="blog-grid">
-          <article class="blog-card">
-            <div class="blog-image">
-              <img
-                src="https://via.placeholder.com/400x250/059669/ffffff?text=AI+Trends"
-                alt="AI Trends"
-              />
-              <div class="blog-category">AI/ML</div>
-            </div>
-            <div class="blog-content">
-              <h3>The Future of AI in Mobile Apps</h3>
-              <p>
-                Exploring how artificial intelligence is revolutionizing mobile
-                app development and user experiences.
-              </p>
-              <div class="blog-meta">
-                <span><i class="far fa-calendar"></i> Dec 15, 2024</span>
-                <span><i class="far fa-clock"></i> 5 min read</span>
-              </div>
-              <a href="#" class="read-more">
-                Read More <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </article>
-          <article class="blog-card">
-            <div class="blog-image">
-              <img
-                src="https://via.placeholder.com/400x250/dc2626/ffffff?text=Flutter+Guide"
-                alt="Flutter Guide"
-              />
-              <div class="blog-category">Mobile</div>
-            </div>
-            <div class="blog-content">
-              <h3>Getting Started with Flutter</h3>
-              <p>
-                A comprehensive guide for beginners to start building
-                cross-platform mobile applications with Flutter.
-              </p>
-              <div class="blog-meta">
-                <span><i class="far fa-calendar"></i> Dec 10, 2024</span>
-                <span><i class="far fa-clock"></i> 8 min read</span>
-              </div>
-              <a href="#" class="read-more">
-                Read More <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </article>
-          <article class="blog-card">
-            <div class="blog-image">
-              <img
-                src="https://via.placeholder.com/400x250/7c3aed/ffffff?text=Web+Performance"
-                alt="Web Performance"
-              />
-              <div class="blog-category">Web Dev</div>
-            </div>
-            <div class="blog-content">
-              <h3>Optimizing Web Performance</h3>
-              <p>
-                Best practices and techniques to improve website loading speed
-                and user experience.
-              </p>
-              <div class="blog-meta">
-                <span><i class="far fa-calendar"></i> Dec 5, 2024</span>
-                <span><i class="far fa-clock"></i> 6 min read</span>
-              </div>
-              <a href="#" class="read-more">
-                Read More <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <h3>Let's Build Something Amazing Together</h3>
-            <p>
-              Ready to transform your ideas into reality? We'd love to hear
-              about your project and discuss how we can help bring your vision
-              to life.
-            </p>
-            <div class="contact-methods">
-              <div class="contact-method">
-                <i class="fas fa-envelope"></i>
-                <div>
-                  <h4>Email</h4>
-                  <p>hello@coderbrothers.com</p>
-                </div>
-              </div>
-              <div class="contact-method">
-                <i class="fab fa-whatsapp"></i>
-                <div>
-                  <h4>WhatsApp</h4>
-                  <p>+91 98765 43210</p>
-                </div>
-              </div>
-              <div class="contact-method">
-                <i class="fab fa-telegram"></i>
-                <div>
-                  <h4>Telegram</h4>
-                  <p>@coderbrothers</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contact-form">
-            <form id="contactForm">
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Your Phone"
-                />
-              </div>
-              <div class="form-group">
-                <select id="service" name="service" required>
-                  <option value="">Select Service</option>
-                  <option value="mobile-app">Mobile App Development</option>
-                  <option value="website">Website Development</option>
-                  <option value="ui-ux">UI/UX Design</option>
-                  <option value="erp-saas">ERP & SaaS Solutions</option>
-                  <option value="ai-ml">AI/ML Integrations</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Tell us about your project"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <!-- Google Maps -->
-        <div class="contact-map">
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sin!4v1640995200000!5m2!1sen!2sin"
-              width="100%"
-              height="300"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            >
-            </iframe>
-          </div>
+          </form>
         </div>
       </div>
 
-      <!-- Floating WhatsApp Button -->
-      <div class="whatsapp-float" id="whatsappFloat">
-        <i class="fab fa-whatsapp"></i>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-neon-border"></div>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>CoderBrothers</h3>
-            <p>
-              Building the future, one line of code at a time. We specialize in
-              creating innovative digital solutions that drive business growth
-              and user engagement.
-            </p>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-          <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#services">Mobile App Development</a></li>
-              <li><a href="#services">Website Development</a></li>
-              <li><a href="#services">UI/UX Design</a></li>
-              <li><a href="#services">ERP & SaaS Solutions</a></li>
-              <li><a href="#services">AI/ML Integrations</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>Contact Info</h4>
-            <ul>
-              <li><i class="fas fa-envelope"></i> hello@coderbrothers.com</li>
-              <li><i class="fab fa-whatsapp"></i> +91 98765 43210</li>
-              <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 CoderBrothers. All rights reserved.</p>
+      <!-- Google Maps -->
+      <div class="contact-map">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sin!4v1640995200000!5m2!1sen!2sin"
+            width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy">
+          </iframe>
         </div>
       </div>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
-    <!-- Include Chatbot Script -->
-    <script src="chatbot.js"></script>
-  </body>
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float" id="whatsappFloat">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-neon-border"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>CoderBrothers</h3>
+          <p>
+            Building the future, one line of code at a time. We specialize in
+            creating innovative digital solutions that drive business growth
+            and user engagement.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Mobile App Development</a></li>
+            <li><a href="#services">Website Development</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">ERP & SaaS Solutions</a></li>
+            <li><a href="#services">AI/ML Integrations</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> hello@coderbrothers.com</li>
+            <li><i class="fab fa-whatsapp"></i> +91 98765 43210</li>
+            <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CoderBrothers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Include Chatbot Script -->
+  <script src="chatbot.js"></script>
+</body>
+
 </html>
