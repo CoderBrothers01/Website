@@ -3724,11 +3724,46 @@ html {
   font-size: 0.9rem;
 }
 
-.timeline-box {
-  border: 2px solid #2563eb; /* Blue border */
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px; /* Inner spacing */
-  background-color: #f9f9f9; /* Light background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-top: 20px; /* Space above the box */
+.project-timeline {
+  padding: 50px 20px;
+  background-color: #1e1e2f; /* Dark background */
+  color: #ffffff; /* White text */
+  text-align: center;
+}
+
+.project-timeline .section-title {
+  font-size: 2rem;
+  color: #a78bfa; /* Accent color */
+  margin-bottom: 30px;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.timeline-phase {
+  background-color: #2a2a40; /* Slightly lighter background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-header h3 {
+  font-size: 1.5rem;
+  color: #a78bfa; /* Accent color */
+  margin-bottom: 10px;
+}
+
+.timeline-content h4 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: #cccccc; /* Secondary text color */
+  line-height: 1.6;
 }
