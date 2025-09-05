@@ -3724,65 +3724,11 @@ html {
   font-size: 0.9rem;
 }
 
-.timeline-options {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.timeline-option {
-  flex: 1 1 calc(33.333% - 2rem);
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.timeline-option:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
-}
-
-.timeline-option i {
-  font-size: 2rem;
-  color: #00d4ff;
-  margin-bottom: 1rem;
-}
-
-.timeline-option h4 {
-  font-size: 1.2rem;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-option p {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* Center summary-card in estimate-summary */
-.estimate-summary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 15px;
-}
-
-.summary-card {
-  text-align: center;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.action-buttons {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
+.timeline-box {
+  border: 2px solid #2563eb; /* Blue border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  background-color: #f9f9f9; /* Light background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-top: 20px; /* Space above the box */
 }
