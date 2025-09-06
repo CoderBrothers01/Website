@@ -1405,7 +1405,7 @@ body.light-theme .language-option:hover {
   background: var(--glass-bg);
   backdrop-filter: blur(20px);
   border: 1px solid var(--glass-border);
-  padding: 2rem;
+  /* padding: 20px; */
   border-radius: 20px;
   box-shadow: var(--glass-shadow);
   transition: var(--transition);
@@ -3766,4 +3766,78 @@ html {
   font-size: 0.9rem;
   color: #cccccc; /* Secondary text color */
   line-height: 1.6;
+}
+
+.estimate-summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.summary-card {
+  /* background-color:rgba(0, 212, 255, 0.1); */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.summary-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.summary-details p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.price-breakdown {
+  margin-top: 15px;
+}
+
+.price-display {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.price-display .currency {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.price-display .amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #059669;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.action-buttons .btn {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.action-buttons .btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.action-buttons .btn-secondary {
+  background-color: #6b7280;
+  color: #ffffff;
 }

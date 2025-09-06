@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Estimation Tool - CoderBrothers</title>
-    <link rel="stylesheet" href="estimate.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estimate.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -49,11 +50,11 @@
                     </div>
 
                     <!-- Project Details -->
-                    <div class="form-section" id="projectDetails" style="display: none;">
+                    <div class="form-section" id="projectDetails" style="display: none">
                         <h3>Project Details</h3>
 
                         <!-- Website Options -->
-                        <div class="detail-options" id="websiteOptions" style="display: none;">
+                        <div class="detail-options" id="websiteOptions" style="display: none">
                             <div class="option-group">
                                 <label>Website Type</label>
                                 <select id="websiteType">
@@ -68,7 +69,7 @@
                             <div class="option-group">
                                 <label>Number of Pages</label>
                                 <div class="range-slider">
-                                    <input type="range" id="websitePages" min="1" max="50" value="5">
+                                    <input type="range" id="websitePages" min="1" max="50" value="5" />
                                     <span class="range-value">5 pages</span>
                                 </div>
                             </div>
@@ -76,24 +77,32 @@
                             <div class="option-group">
                                 <label>Additional Features</label>
                                 <div class="checkbox-group">
-                                    <label><input type="checkbox" value="responsive"> Responsive Design</label>
-                                    <label><input type="checkbox" value="seo"> SEO Optimization</label>
-                                    <label><input type="checkbox" value="cms"> CMS Integration</label>
-                                    <label><input type="checkbox" value="analytics"> Analytics Setup</label>
-                                    <label><input type="checkbox" value="ssl"> SSL Certificate</label>
-                                    <label><input type="checkbox" value="hosting"> Hosting Setup</label>
+                                    <label><input type="checkbox" value="responsive" /> Responsive
+                                        Design</label>
+                                    <label><input type="checkbox" value="seo" /> SEO
+                                        Optimization</label>
+                                    <label><input type="checkbox" value="cms" /> CMS
+                                        Integration</label>
+                                    <label><input type="checkbox" value="analytics" /> Analytics
+                                        Setup</label>
+                                    <label><input type="checkbox" value="ssl" /> SSL
+                                        Certificate</label>
+                                    <label><input type="checkbox" value="hosting" /> Hosting
+                                        Setup</label>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Mobile App Options -->
-                        <div class="detail-options" id="mobileAppOptions" style="display: none;">
+                        <div class="detail-options" id="mobileAppOptions" style="display: none">
                             <div class="option-group">
                                 <label>Platform</label>
                                 <select id="mobilePlatform">
                                     <option value="ios">iOS Only</option>
                                     <option value="android">Android Only</option>
-                                    <option value="cross-platform">Cross-platform (React Native/Flutter)</option>
+                                    <option value="cross-platform">
+                                        Cross-platform (React Native/Flutter)
+                                    </option>
                                 </select>
                             </div>
 
@@ -111,7 +120,7 @@
                             <div class="option-group">
                                 <label>Number of Screens</label>
                                 <div class="range-slider">
-                                    <input type="range" id="appScreens" min="5" max="50" value="10">
+                                    <input type="range" id="appScreens" min="5" max="50" value="10" />
                                     <span class="range-value">10 screens</span>
                                 </div>
                             </div>
@@ -119,18 +128,24 @@
                             <div class="option-group">
                                 <label>Additional Features</label>
                                 <div class="checkbox-group">
-                                    <label><input type="checkbox" value="push-notifications"> Push Notifications</label>
-                                    <label><input type="checkbox" value="payment-gateway"> Payment Gateway</label>
-                                    <label><input type="checkbox" value="social-login"> Social Login</label>
-                                    <label><input type="checkbox" value="offline-mode"> Offline Mode</label>
-                                    <label><input type="checkbox" value="analytics"> Analytics Integration</label>
-                                    <label><input type="checkbox" value="app-store"> App Store Submission</label>
+                                    <label><input type="checkbox" value="push-notifications" /> Push
+                                        Notifications</label>
+                                    <label><input type="checkbox" value="payment-gateway" /> Payment
+                                        Gateway</label>
+                                    <label><input type="checkbox" value="social-login" /> Social
+                                        Login</label>
+                                    <label><input type="checkbox" value="offline-mode" /> Offline
+                                        Mode</label>
+                                    <label><input type="checkbox" value="analytics" /> Analytics
+                                        Integration</label>
+                                    <label><input type="checkbox" value="app-store" /> App Store
+                                        Submission</label>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Web App Options -->
-                        <div class="detail-options" id="webAppOptions" style="display: none;">
+                        <div class="detail-options" id="webAppOptions" style="display: none">
                             <div class="option-group">
                                 <label>Application Type</label>
                                 <select id="webAppType">
@@ -154,25 +169,31 @@
                             <div class="option-group">
                                 <label>User Management</label>
                                 <div class="checkbox-group">
-                                    <label><input type="checkbox" value="user-auth"> User Authentication</label>
-                                    <label><input type="checkbox" value="role-based"> Role-based Access</label>
-                                    <label><input type="checkbox" value="multi-tenant"> Multi-tenant</label>
+                                    <label><input type="checkbox" value="user-auth" /> User
+                                        Authentication</label>
+                                    <label><input type="checkbox" value="role-based" /> Role-based
+                                        Access</label>
+                                    <label><input type="checkbox" value="multi-tenant" />
+                                        Multi-tenant</label>
                                 </div>
                             </div>
 
                             <div class="option-group">
                                 <label>Additional Features</label>
                                 <div class="checkbox-group">
-                                    <label><input type="checkbox" value="api"> REST API</label>
-                                    <label><input type="checkbox" value="real-time"> Real-time Updates</label>
-                                    <label><input type="checkbox" value="reporting"> Reporting System</label>
-                                    <label><input type="checkbox" value="integrations"> Third-party Integrations</label>
+                                    <label><input type="checkbox" value="api" /> REST API</label>
+                                    <label><input type="checkbox" value="real-time" /> Real-time
+                                        Updates</label>
+                                    <label><input type="checkbox" value="reporting" /> Reporting
+                                        System</label>
+                                    <label><input type="checkbox" value="integrations" />
+                                        Third-party Integrations</label>
                                 </div>
                             </div>
                         </div>
 
                         <!-- UI/UX Options -->
-                        <div class="detail-options" id="uiUxOptions" style="display: none;">
+                        <div class="detail-options" id="uiUxOptions" style="display: none">
                             <div class="option-group">
                                 <label>Design Type</label>
                                 <select id="designType">
@@ -186,7 +207,7 @@
                             <div class="option-group">
                                 <label>Number of Screens/Pages</label>
                                 <div class="range-slider">
-                                    <input type="range" id="designScreens" min="1" max="30" value="5">
+                                    <input type="range" id="designScreens" min="1" max="30" value="5" />
                                     <span class="range-value">5 screens</span>
                                 </div>
                             </div>
@@ -194,10 +215,14 @@
                             <div class="option-group">
                                 <label>Additional Services</label>
                                 <div class="checkbox-group">
-                                    <label><input type="checkbox" value="user-research"> User Research</label>
-                                    <label><input type="checkbox" value="usability-testing"> Usability Testing</label>
-                                    <label><input type="checkbox" value="branding"> Brand Identity</label>
-                                    <label><input type="checkbox" value="style-guide"> Style Guide</label>
+                                    <label><input type="checkbox" value="user-research" /> User
+                                        Research</label>
+                                    <label><input type="checkbox" value="usability-testing" />
+                                        Usability Testing</label>
+                                    <label><input type="checkbox" value="branding" /> Brand
+                                        Identity</label>
+                                    <label><input type="checkbox" value="style-guide" /> Style
+                                        Guide</label>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +231,7 @@
                     <!-- Timeline -->
                     <div class="form-section">
                         <h3>Timeline</h3>
-                        <div class="timeline-options">
+                        <div class="timeline-options" style="display: flex; flex-direction: row">
                             <div class="timeline-option" data-timeline="urgent">
                                 <i class="fas fa-rocket"></i>
                                 <h4>Urgent (1-2 weeks)</h4>
@@ -230,13 +255,13 @@
                         <h3>Contact Information</h3>
                         <div class="contact-fields">
                             <div class="form-group">
-                                <input type="text" id="clientName" placeholder="Your Name" required>
+                                <input type="text" id="clientName" placeholder="Your Name" required />
                             </div>
                             <div class="form-group">
-                                <input type="email" id="clientEmail" placeholder="Email Address" required>
+                                <input type="email" id="clientEmail" placeholder="Email Address" required />
                             </div>
                             <div class="form-group">
-                                <input type="tel" id="clientPhone" placeholder="Phone Number">
+                                <input type="tel" id="clientPhone" placeholder="Phone Number" />
                             </div>
                             <div class="form-group">
                                 <textarea id="projectDescription" placeholder="Brief project description (optional)"
@@ -254,18 +279,19 @@
                         <p>Select project type to see estimate</p>
                     </div>
 
-                    <div class="price-breakdown" id="priceBreakdown" style="display: none;">
+                    <div class="price-breakdown" id="priceBreakdown" style="display: none">
                         <h4>Price Breakdown</h4>
-                        <div class="breakdown-items" id="breakdownItems">
-                        </div>
+                        <div class="breakdown-items" id="breakdownItems"></div>
                     </div>
 
-                    <div class="total-price" id="totalPrice" style="display: none;">
+                    <div class="total-price" id="totalPrice" style="display: none">
                         <div class="price-display">
                             <span class="currency">₹</span>
                             <span class="amount" id="totalAmount">0</span>
                         </div>
-                        <p class="price-note">* Final price may vary based on specific requirements</p>
+                        <p class="price-note">
+                            * Final price may vary based on specific requirements
+                        </p>
                     </div>
 
                     <div class="action-buttons">
