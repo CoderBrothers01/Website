@@ -1405,7 +1405,7 @@ body.light-theme .language-option:hover {
   background: var(--glass-bg);
   backdrop-filter: blur(20px);
   border: 1px solid var(--glass-border);
-  /* padding: 20px; */
+  padding: 20px;
   border-radius: 20px;
   box-shadow: var(--glass-shadow);
   transition: var(--transition);
